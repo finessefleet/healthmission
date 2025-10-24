@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Mission | Finessefleet Foundation & Paalann</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for custom styles and Inter font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0f172a',  // Deep Corporate Navy/Slate
+                        'accent-gold': '#f59e0b',   // Vibrant Action Gold/Amber
+                        'text-light': '#cbd5e1',    // Light gray for secondary text
+                        'light-bg': '#f8fafc',      // Off-white background
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Apply Inter font globally and ensure smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Custom gradient for Hero */
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--tw-colors-primary-dark) 0%, #1e293b 100%);
+        }
+
+        /* Style for News Rows - subtle transition */
+        .news-row:hover {
+            background-color: #f1f5f9;
+            /* Subtle hover effect */
+        }
+    </style>
+</head>
+
+<body class="bg-light-bg text-primary-dark">
+
+    <!-- Utility Bar (Top Navbar) -->
+    <div id="utility-bar" class="bg-accent-gold py-2 text-sm font-medium hidden sm:block">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-end space-x-6 text-primary-dark">
+            <span class="hidden lg:inline">ANNOUNCEMENT: Application Open for Research Assistantship - Deadline December 30th, 2025</span>
+            <!-- <a href="#" class="hover:underline">Careers</a> -->
+            <a href="mailto:healthmission@finessefleet.com" class="hover:underline">Contact</a>
+        </div>
+    </div>
+
+    <!-- Primary Navigation Bar -->
+    <header class="shadow-xl bg-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+
+            <!-- Updated Branding Section: Logos | HealthMission -->
+            <div class="text-3xl font-extrabold tracking-tight flex items-center space-x-3">
+
+                <!-- Logo 1 (Finessefleet Foundation - Accent Gold) -->
+                <img src="https://media.licdn.com/dms/image/v2/D560BAQF_q0riUmyk2g/company-logo_200_200/company-logo_200_200/0/1719255692389/finessefleet_logo?e=2147483647&v=beta&t=jCUC_4Bf_3Tjwt0xM57-G_kICgu1gmjYFtmM1nRufPk"
+                    alt="Finessefleet Foundation" class="w-13 h-14 object-contain" title="Finessefleet Foundation" />
+
+                <!-- Logo 2 (Paalann - Primary Dark) -->
+                <img src="paalann.png" alt="Paalann" class="w-12 h-12 object-contain" title="Paalann" />
+
+                <!-- Logo 3 (Major Corporate Partner - Primary Dark) -->
+                <img src="hip_logo.png" alt="Health Impact Programme" class="w-auto h-12 object-contain"
+                    title="Major Partner" />
+
+
+                <!-- Separator -->
+                <span class="text-3xl font-light text-gray-400">|</span>
+
+                <!-- Initiative Name -->
+                <span class="text-primary-dark">Health</span><span class="text-accent-gold">Impact Programme</span>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-10 text-lg font-semibold">
+                <a href="#mission" class="text-primary-dark hover:text-accent-gold transition duration-300">Strategy</a>
+                <a href="#updates" class="text-primary-dark hover:text-accent-gold transition duration-300">Newsroom</a>
+                <a href="#impact" class="text-primary-dark hover:text-accent-gold transition duration-300">Impact</a>
+            </nav>
+
+            <!-- CTA Buttons -->
+            <a href="#cta"
+                class="bg-primary-dark text-white px-6 py-2 rounded-full text-base font-bold shadow-lg hover:bg-opacity-90 transition duration-300 hidden md:inline-block ring-2 ring-primary-dark/50 hover:ring-accent-gold">
+Engage with HIP            </a>
+            <a href="#cta"
+                class="md:hidden bg-primary-dark text-white px-4 py-2 rounded-full text-sm font-bold shadow-md">
+                Engage with HIP
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Hero Section (Proper and High Contrast) -->
+    <section id="hero" class="hero-gradient text-white py-36 md:py-64 relative overflow-hidden"
+        style="background-image: url('hero.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-5xl md:text-8xl font-black mb-4 leading-tight tracking-tighter">
+                <span class="text-accent-gold">Driving</span> High-Leverage <br class="hidden sm:inline"> National
+                Health Mission
+            </h2>
+            <p class="text-xl md:text-3xl font-light mb-12 max-w-5xl mx-auto opacity-80 pt-4">
+                A joint initiative by <b>Finessefleet Foundation</b> and <b>Paalann</b> to revolutionise <b>India's
+                    Healthcare Sector</b>.
+            </p>
+            <a href="#updates"
+                class="bg-accent-gold text-primary-dark text-xl font-black px-16 py-5 rounded-full shadow-2xl transform hover:scale-[1.03] transition duration-300 ring-4 ring-white/70 uppercase tracking-wider">
+                View Latest Updates
+            </a>
+        </div>
+    </section>
+
+<!-- Mission & Strategy Section -->
+<section id="mission" class="py-24 md:py-36 bg-white">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Heading -->
+    <div class="max-w-6xl mx-auto text-center mb-20">
+      <span class="text-lg font-bold text-accent-gold uppercase tracking-widest">Thrust Areas</span>
+      <h3 class="text-4xl md:text-5xl font-extrabold mt-2 mb-6 text-primary-dark">
+        Precision Impact through Structured Engagements
+      </h3>
+      <p class="text-xl text-gray-500 max-w-4xl mx-auto">
+        We recognize the importance of exploring the interdisciplinary connections between healthcare, technology, and related fields. Therefore, our initial focus is on the integration of Public Health and Technology.
+      </p>
+    </div>
+
+    <!-- Thrust Areas Grid -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 text-center">
+      <!-- Area 1 -->
+      <div class="p-8 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
+        <h4 class="text-xl font-bold text-primary-dark mb-3">Digital Health & Health Informatics</h4>
+        <p class="text-gray-600">Leveraging technology to enhance healthcare delivery, data management, and patient engagement.</p>
+      </div>
+
+      <!-- Area 2 -->
+      <div class="p-8 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
+        <h4 class="text-xl font-bold text-primary-dark mb-3">AI & Machine Learning in Public Health</h4>
+        <p class="text-gray-600">Harnessing intelligent systems to improve disease surveillance, diagnostics, and predictive modeling.</p>
+      </div>
+
+      <!-- Area 3 -->
+      <div class="p-8 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
+        <h4 class="text-xl font-bold text-primary-dark mb-3">Epidemiological Modeling & Data Science</h4>
+        <p class="text-gray-600">Applying analytical frameworks to understand, forecast, and respond to health challenges.</p>
+      </div>
+
+      <!-- Area 4 -->
+      <div class="p-8 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
+        <h4 class="text-xl font-bold text-primary-dark mb-3">Global Health & Health Equity</h4>
+        <p class="text-gray-600">Promoting equitable access to healthcare resources and addressing global disparities in health outcomes.</p>
+      </div>
+
+      <!-- Area 5 -->
+      <div class="p-8 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
+        <h4 class="text-xl font-bold text-primary-dark mb-3">Environmental & Climate Health</h4>
+        <p class="text-gray-600">Understanding how environmental factors and climate change affect public health and wellbeing.</p>
+      </div>
+
+      <!-- Area 6 -->
+      <div class="p-8 border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
+        <h4 class="text-xl font-bold text-primary-dark mb-3">Behavioral & Social Health Analytics</h4>
+        <p class="text-gray-600">Using behavioral insights and social data to design more effective public health interventions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- News & Updates Section (Modern Table Row-Wise) -->
+    <section id="updates" class="py-24 md:py-36 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div class="text-center mb-16">
+                <span class="text-lg font-bold text-primary-dark uppercase tracking-widest">Newsroom</span>
+                <h3 class="text-4xl md:text-5xl font-extrabold mt-2 mb-4 text-primary-dark">
+                    Latest Releases & Mission Updates
+                </h3>
+            </div>
+
+            <div class="space-y-4 border-t border-b border-gray-200">
+
+                <!-- News Row -->
+                <a href="https://www.linkedin.com/jobs/view/4308820426/"
+                    class="news-row block p-6 bg-white hover:bg-gray-50 transition duration-150">
+                    <div class="grid grid-cols-1 md:grid-cols-4 items-center gap-4">
+                        <div class="text-sm font-semibold uppercase text-accent-gold">
+                            October 20, 2025
+                        </div>
+                        <div class="col-span-2 text-l font-semibold text-primary-dark">
+                            Applications are invited for a three-month Short-term Research Internship from undergraduate
+                            and postgraduate students pursuing degrees in Healthcare or allied disciplines across India.
+                            Interested candidates are encouraged to apply via email at secretariat@finessefleet.com.
+                        </div>
+                        <div class="md:text-right text-base text-gray-600 font-medium">
+                            <span class="hover:text-primary-dark transition duration-150">Read More &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- News Row -->
+                <a href="https://groups.google.com/g/jhm_fp2025"
+                    class="news-row block p-6 bg-white hover:bg-gray-50 transition duration-150">
+                    <div class="grid grid-cols-1 md:grid-cols-4 items-center gap-4">
+                        <div class="text-sm font-semibold uppercase text-accent-gold">
+                            October 16, 2025
+                        </div>
+                        <div class="col-span-2 text-l font-semibold text-primary-dark">
+                            Establishment of a Public Mail Group to provide updates on the Health Impact Programme.
+                            Anyone interested in staying informed and participating can join the group.
+                        </div>
+                        <div class="md:text-right text-base text-gray-600 font-medium">
+                            <span class="hover:text-primary-dark transition duration-150">Join Group &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- News Row -->
+                <a href="/data/Commencement.pdf"
+                    class="news-row block p-6 bg-white hover:bg-gray-50 transition duration-150">
+                    <div class="grid grid-cols-1 md:grid-cols-4 items-center gap-4">
+                        <div class="text-sm font-semibold uppercase text-accent-gold">
+                            October 16, 2025
+                        </div>
+                        <div class="col-span-2 text-l font-semibold text-primary-dark">
+                            Commencement of the Joint Health Mission between Finessefleet Foundation
+                            (www.finessefleet.com) and Paalann (www.paalann.com), along with the appointment of Ms.
+                            Garima Tripathi as the Mission Director of the Joint Health Mission.
+                        </div>
+                        <div class="md:text-right text-base text-gray-600 font-medium">
+                            <span class="hover:text-primary-dark transition duration-150">Office Memorandum
+                                &rarr;</span>
+                        </div>
+                    </div>
+                </a>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Metrics Section -->
+    <section id="impact" class="py-24 md:py-36 bg-primary-dark text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-4xl md:text-5xl font-extrabold mb-4 text-accent-gold">
+                Quantitative Impact: Results Driven
+            </h3>
+            <p class="text-xl font-light mb-16 max-w-4xl mx-auto opacity-80">
+                Model of Health Impact Programme is built on accountability, translating volunteer-driven contributions
+                into positive
+                community change.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+                <!-- Metric 1 -->
+                <div class="p-4">
+                    <p class="text-5xl md:text-6xl font-black text-accent-gold mb-2">330</p>
+                    <p class="text-sm font-semibold uppercase opacity-80 border-t border-white/30 pt-2">Maximum
+                        Volunteers Intake
+                    </p>
+                </div>
+                <!-- Metric 2 -->
+                <div class="p-4">
+                    <p class="text-5xl md:text-6xl font-black text-white mb-2">2</p>
+                    <p class="text-sm font-semibold uppercase opacity-80 border-t border-white/30 pt-2">Ongoing Projects
+                    </p>
+                </div>
+                <!-- Metric 3 -->
+                <div class="p-4">
+                    <p class="text-5xl md:text-6xl font-black text-accent-gold mb-2">36</p>
+                    <p class="text-sm font-semibold uppercase opacity-80 border-t border-white/30 pt-2">Proposed
+                        States/UTs
+                        Supported</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-5xl md:text-6xl font-black text-accent-gold mb-2">1</p>
+                    <p class="text-sm font-semibold uppercase opacity-80 border-t border-white/30 pt-2">Upcoming
+                        Projects</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action (CTA) Section -->
+    <section id="cta" class="py-20 md:py-28 bg-accent-gold text-primary-dark">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-4xl md:text-5xl font-black mb-4 tracking-tight">
+                Volunteer Your Talent. Accelerate India's Mission.
+            </h3>
+            <p class="text-xl md:text-xl font-semibold mb-10 max-w-4xl mx-auto opacity-90">
+Individuals at any level who are interested in volunteering their time and talent on a short-term/long-term basis are invited to explore suitable opportunities by contacting us via email at healthmission@finessefleet.com.            </p>
+<!-- 
+            <button onclick="showModal()"
+                class="bg-primary-dark text-white text-2xl font-black uppercase tracking-wider px-14 py-5 rounded-full shadow-2xl transform hover:scale-[1.05] transition duration-300 ring-4 ring-white/70">
+                Apply for Internship Mission
+            </button> -->
+        </div>
+    </section>
+
+    <!-- Detailed Corporate Footer -->
+    <footer class="bg-primary-dark py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-gray-400">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+
+                <!-- Col 1: Logo & Mission -->
+                <div class="col-span-2 md:col-span-2">
+                    <p class="text-3xl font-extrabold tracking-tight mb-4">
+                        <span class="text-white">Health  </span><span class="text-accent-gold">Impact Programme</span>
+                    </p>
+                    <p class="text-sm leading-relaxed">
+                        A joint-initiative of Finessefleet Foundation and Paalann.
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div>
+                    <h5 class="text-lg font-bold text-white mb-4">Navigation</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#mission" class="hover:text-accent-gold transition duration-200">Strategy &
+                                Pillars</a></li>
+                        <li><a href="#updates" class="hover:text-accent-gold transition duration-200">Newsroom</a></li>
+                        <li><a href="#impact" class="hover:text-accent-gold transition duration-200">Project Impact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Legal & Resources -->
+                <div>
+                    <h5 class="text-lg font-bold text-white mb-4">Resources</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://groups.google.com/g/jhm_fp2025" class="hover:text-accent-gold transition duration-200">Mailing Group</a></li>
+                        <!-- <li><a href="#" class="hover:text-accent-gold transition duration-200">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-accent-gold transition duration-200">Mission Reports</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div>
+                    <h5 class="text-lg font-bold text-white mb-4">Health Impact Programme</h5>
+                    <p class="text-sm leading-relaxed mb-4 text-white">
+                        Finessefleet Foundation, 1st Floor, Sri Sai Tower, 994, 1st Main Rd, S.T. Bed, Cauvery Colony,
+                        Koramangala, Bengaluru, Karnataka 560034
+                    </p>
+                    <p class="text-sm">
+                        Email: <a href="mailto:healthmission@finessefleet.com"
+                            class="text-accent-gold hover:underline">healthmission@finessefleet.com</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center text-xs">
+                &copy; 2025 Finessefleet Foundation & Paalann. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Application (Instead of alert()) -->
+    <div id="volunteerModal"
+        class="fixed inset-0 bg-black bg-opacity-70 z-[100] hidden flex items-center justify-center p-4"
+        onclick="closeModal(event)">
+        <div class="bg-white p-8 rounded-xl shadow-2xl w-full max-w-lg transform transition-all duration-300 scale-100 opacity-100"
+            onclick="event.stopPropagation()">
+            <h4 class="text-3xl font-bold text-primary-dark mb-4">Apply for a Student Mission Internship</h4>
+            <p class="text-gray-600 mb-6 border-b pb-4">
+                We seek high-potential undergraduate and postgraduate students. Please provide your university details
+                below.
+            </p>
+
+            <form id="volunteerForm">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-semibold text-primary-dark text-left mb-1">Full
+                        Name</label>
+                    <input type="text" id="name" required
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-inner focus:ring-accent-gold focus:border-accent-gold transition duration-150">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-sm font-semibold text-primary-dark text-left mb-1">University
+                        Email</label>
+                    <input type="email" id="email" required
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-inner focus:ring-accent-gold focus:border-accent-gold transition duration-150">
+                </div>
+                <button type="submit"
+                    class="w-full bg-accent-gold text-primary-dark py-3 rounded-full font-bold text-lg hover:bg-opacity-90 transition duration-300 shadow-lg">
+                    Submit Internship Application Interest
+                </button>
+            </form>
+
+            <button onclick="closeModal()"
+                class="mt-6 text-sm text-gray-500 hover:text-primary-dark transition duration-300 font-semibold">
+                &times; Close Window
+            </button>
+        </div>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>
